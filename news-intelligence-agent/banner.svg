@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#15213a"/>
+      <stop offset="1" stop-color="#17213a"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ff9012"/>
@@ -10,32 +10,42 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-    <path d="M0 105H1200M0 210H1200M0 315H1200M0 420H1200M0 525H1200"/>
-    <path d="M150 0V630M300 0V630M450 0V630M600 0V630M750 0V630M900 0V630M1050 0V630"/>
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <path d="M0 126H1200M0 252H1200M0 378H1200M0 504H1200"/>
+    <path d="M200 0V630M400 0V630M600 0V630M800 0V630M1000 0V630"/>
   </g>
-  <rect x="70" y="70" width="14" height="490" rx="7" fill="url(#accent)"/>
-  <text x="120" y="150" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" font-weight="500" fill="#9fb0cc" letter-spacing="6">APIFY ACTOR</text>
-  <text x="120" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="78" font-weight="700" fill="#ffffff">AI News Research Agent</text>
-  <text x="120" y="330" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" font-weight="400" fill="#dce4f2">Question in. Cited brief out. No API key.</text>
-  <text x="120" y="400" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#9fb0cc">Google News + publisher RSS + Reddit + X, read by Claude, delivered as one record.</text>
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-weight="500">
-    <rect x="120" y="460" width="300" height="56" rx="28" fill="#1f2d4d" stroke="#3a4d78"/>
-    <text x="270" y="497" text-anchor="middle" fill="#ffffff">Limited permissions</text>
-    <rect x="440" y="460" width="220" height="56" rx="28" fill="#1f2d4d" stroke="#3a4d78"/>
-    <text x="550" y="497" text-anchor="middle" fill="#ffffff">MCP ready</text>
-    <rect x="680" y="460" width="330" height="56" rx="28" fill="#1f2d4d" stroke="#3a4d78"/>
-    <text x="845" y="497" text-anchor="middle" fill="#ffffff">Articles-only mode, no model</text>
+
+  <!-- accent bar -->
+  <rect x="80" y="120" width="12" height="390" rx="6" fill="url(#accent)"/>
+
+  <!-- text column: x 128 to 860 -->
+  <text x="128" y="172" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#9fb0cc" letter-spacing="6">APIFY ACTOR</text>
+  <text x="128" y="258" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="66" font-weight="700" fill="#ffffff">AI News Research Agent</text>
+  <text x="128" y="326" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#e3e9f5">Question in. Cited brief out. No API key.</text>
+  <text x="128" y="378" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#9fb0cc">Google News, RSS, Reddit and X. Read in full, cited.</text>
+
+  <!-- chips -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="600">
+    <rect x="128" y="436" width="250" height="50" rx="25" fill="#1f2d4d" stroke="#3a4d78"/>
+    <text x="253" y="468" text-anchor="middle" fill="#ffffff">Limited permissions</text>
+    <rect x="396" y="436" width="160" height="50" rx="25" fill="#1f2d4d" stroke="#3a4d78"/>
+    <text x="476" y="468" text-anchor="middle" fill="#ffffff">MCP ready</text>
+    <rect x="574" y="436" width="236" height="50" rx="25" fill="#1f2d4d" stroke="#3a4d78"/>
+    <text x="692" y="468" text-anchor="middle" fill="#ffffff">Articles-only mode</text>
   </g>
-  <g transform="translate(960 110)">
-    <rect x="0" y="0" width="150" height="190" rx="18" fill="#ffffff" opacity="0.96"/>
-    <rect x="18" y="22" width="114" height="18" rx="4" fill="#0b1220"/>
-    <rect x="18" y="52" width="60" height="60" rx="6" fill="url(#accent)"/>
-    <rect x="88" y="52" width="44" height="8" rx="4" fill="#9fb0cc"/>
-    <rect x="88" y="68" width="44" height="8" rx="4" fill="#9fb0cc"/>
-    <rect x="88" y="84" width="44" height="8" rx="4" fill="#9fb0cc"/>
-    <rect x="18" y="126" width="114" height="8" rx="4" fill="#9fb0cc"/>
-    <rect x="18" y="142" width="114" height="8" rx="4" fill="#9fb0cc"/>
-    <rect x="18" y="158" width="80" height="8" rx="4" fill="#9fb0cc"/>
+
+  <!-- brief card glyph, right column x 920 to 1090 -->
+  <g transform="translate(956 200)">
+    <rect x="0" y="0" width="170" height="220" rx="20" fill="#ffffff" opacity="0.97"/>
+    <rect x="20" y="24" width="130" height="20" rx="5" fill="#0b1220"/>
+    <rect x="20" y="60" width="64" height="64" rx="8" fill="url(#accent)"/>
+    <rect x="96" y="62" width="54" height="9" rx="4" fill="#9fb0cc"/>
+    <rect x="96" y="80" width="54" height="9" rx="4" fill="#9fb0cc"/>
+    <rect x="96" y="98" width="54" height="9" rx="4" fill="#9fb0cc"/>
+    <rect x="96" y="116" width="40" height="9" rx="4" fill="#9fb0cc"/>
+    <rect x="20" y="142" width="130" height="9" rx="4" fill="#9fb0cc"/>
+    <rect x="20" y="160" width="130" height="9" rx="4" fill="#9fb0cc"/>
+    <rect x="20" y="178" width="96" height="9" rx="4" fill="#9fb0cc"/>
+    <text x="52" y="106" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0b1220">AI</text>
   </g>
 </svg>
